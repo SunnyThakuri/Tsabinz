@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-poppins: "Poppins", sans-serif;
+}
+body {
+  font-family: var(--font-poppins);
+  font-weight: 400;
+}
+.against-font {
+  font-family: var(--font-against) !important;
+  font-weight: 400;
+}
+
+.hero-font {
+  font-weight: 100;
+}
+.shop-btn {
+  @apply bg-customWhite px-[52px] py-[12px] rounded-[40px] text-[14px];
+}
+.shop-btn-dark {
+  @apply bg-customBlack px-[52px] py-[12px] rounded-[40px] text-[14px] text-customWhite;
+}
+.shop-btn-dark-flat {
+  @apply bg-customBlack px-[52px] py-[12px] text-[14px] text-customWhite;
+}
+.shop-btn-white {
+  @apply px-[52px] py-[12px] rounded-[40px] text-[14px] border border-customBlack;
+}
+
+/* product slider dots */
+.slick-dots li.slick-active div {
+  @apply bg-black;
+}
